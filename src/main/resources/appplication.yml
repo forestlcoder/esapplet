@@ -1,0 +1,24 @@
+spring:
+  datasource:
+#    url: jdbc:mysql://136.255.244.236:3306/healthrecord?useSSL=false
+#    username: root
+#    password: WD16&T*uigf
+es:
+  debug: true
+  nodename: News-ES
+  server:
+#    ip: 192.168.189.36
+#    port: 9300
+    ip: 127.0.0.1
+    port: 9300
+  bulk:
+    actions: 10000
+    size_mb: 6
+    flush_second: 10
+app:
+  threadpool:
+    read-size: 100
+    write-size: 10
+  data:
+    size-per-thread: 10
+    size-per-page: 1000
